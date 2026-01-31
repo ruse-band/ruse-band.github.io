@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif, serif; /* A font stack */
+}
+
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+
+
+.fixed-image {
+    position: fixed;
+    z-index: 1000; /* High value to stay above all other elements */
+}
+
+#img1 {
+    bottom: 40px; /* Distance from bottom of screen */
+    right: 20px; /* Distance from right of screen */
+    width: 200px;
+    height: auto;
+}
+
+#img2 {
+    top: -200px;
+    left: -200px;
+    width: 1080px;
+    height: auto;
+}
+
+.flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+    }
+
+.flex-container div {
+            background-color: #71848f;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 24px;
+        
+    }
+
+.icon-button {
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    padding: 10px 20px; /* Adjust padding to size your button */
+    background-color: #4400ff; /* Button background color */
+    color: white; /* Text and icon color */
+    text-decoration: none; /* Removes default underline from links */
+    border-radius: 5px; /* Adds rounded corners */
+    font-weight: bold; /* Makes text bold */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    cursor: pointer; /* Ensures it looks clickable */
+}
+
+.icon-button i {
+    margin-right: 8px; /* Adds space between the icon and text */
+}
+
+.icon-button:hover {
+    background-color: #000000; /* Darker background on hover */
+}
+
+
+.video-container {
+    aspect-ratio: 16 / 9;
+    position: relative;
+    width: 100%;
+    float: right;
+    margin: 0 auto;
+    border: ghostwhite;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
