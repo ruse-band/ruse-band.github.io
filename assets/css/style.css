@@ -45,22 +45,6 @@ body {
     height: auto;
 }
 
-/* VIDEO HEADER */
-
-.header-video {
-    width: 100%;
-    width:"auto";   
-    border: ghostwhite;
-}
-
-/* On mobile, adjust the aspect ratio to 9:16 */
-@media (max-width: 768px) {
-    .header-video {
-        /* Example: Force 9:16 aspect ratio if container doesn't do it automatically */
-        aspect-ratio: 9 / 16;
-        object-fit: cover; /* Ensures video covers the area without stretching */
-    }
-}
 
 /* STREAMING LINKS */
 
