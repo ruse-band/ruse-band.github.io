@@ -41,9 +41,47 @@ body {
 #img2 {
     top: 0%;
     left: 0%;
-    width: 50%;
+    width: 40%;
     height: auto;
+   
 }
+
+/* HEADER CONTAINER W/ VIDEO AND ARROW */
+
+.header-box {
+    position: relative; /* Container acts as anchor */
+    z-index: 100;
+    width: 100%;
+  }
+
+  .floating-arrow {
+    position:absolute;
+    top: 72%;
+    left: 44%;
+    margin: 0 auto;
+    
+  }
+
+   #arrow1 {
+    position: relative;
+    color: #ffffff;
+    font-size: 7rem;
+    z-index: 101;
+  }
+
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+  }
+  
+  .bounce {
+    animation: 1s infinite alternate bounce;
+
+  }
+
+ 
+
+  
 
 
 /* STREAMING LINKS */
@@ -95,7 +133,7 @@ body {
     z-index: 0;
     width: 80%;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 10%;
     border: ghostwhite;
     
 }
@@ -109,13 +147,20 @@ body {
     border-radius: 5%;
 }
 
+/* BANDSINTOWN EMBED */
+
+.bandsintown-segment{
+    margin-top: 10%
+}
+
 /* BANDCAMP EMBED */
 
 .bandcamp-embed {
     
     z-index: 0;
     display: flex;
-    background-image: url(images/Dad\ On\ Escalator\ 2\ -\ Banner.jpg);
+    align-items: center;
+    background-image: url(images/Proto\ With\ Baseball\ Bat\ -\ Black\ and\ White\ .png);
     /* Position the image */
     background-position: center center; 
     
@@ -127,9 +172,10 @@ body {
     
     /* Scale the background image to be as large as possible so that the background area is completely covered by the background image (no white space) */
     background-size: cover; 
-    background-color: #71848f;
-    flex-wrap: wrap;
+    background-color: #1d0c79;
+   
     justify-content: center;
+   
     margin: 10%;
     border-color: ghostwhite;
     border-style: outset;
@@ -138,7 +184,7 @@ body {
 
 .bandcamp-embed iframe {
     border-color: ghostwhite;
-    margin: 8%;
+    margin: 5%;
     border-radius: 5%;
 }
 
@@ -171,7 +217,7 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 80%;
   position: relative;
   margin: auto;
 }
