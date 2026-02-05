@@ -61,7 +61,7 @@ body {
             
             margin: 0 auto;
             padding: 0px;
-            font-size: 140%;
+            font-size: 200%;
         
     }
 
@@ -69,7 +69,7 @@ body {
     display: inline-flex; /* Allows icon and text to align nicely */
     align-items: center; /* Vertically centers the items */
     justify-content: center; /* Centers items horizontally */
-    padding: 30px 60px; /* Adjust padding to size your button */
+    padding: 25px 50px; /* Adjust padding to size your button */
     background-color: #4400ff; /* Button background color */
     color: white; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
