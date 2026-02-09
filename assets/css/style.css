@@ -158,37 +158,20 @@ body {
     
     z-index: 100;
     display: grid;
-    grid-template-rows: 70%;
-
+    
     align-items: center;
-    
-    /* BORDER CONTAINER OPTION   
-
     background-image: url(images/Proto\ With\ Baseball\ Bat\ -\ Black\ and\ White\ .png);
-    /* Position the image
     background-position: center center; 
-    
-    /* Prevent the image from repeating 
     background-repeat: no-repeat; 
-    
-    /* This is the crucial line: it fixes the background in place 
     background-attachment: fixed; 
-    
-    /* Scale the background image to be as large as possible so that the background area is completely covered by the background image (no white space) */
-    /* BORDER CONTAINER OPTION 
     background-size: cover; 
     background-color: #1d0c79;
-   
     justify-content: center;
-   
     margin: 10%;
-
-    /* BORDER CONTAINER OPTION 
     border-color: ghostwhite;
     border-style: outset;
     border-radius: 5%;
 
-     */
 }
 
 .bandcamp-embed iframe {
@@ -246,7 +229,7 @@ body {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18rem;
+  font-size: 10rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
