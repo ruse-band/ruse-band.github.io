@@ -46,6 +46,14 @@ body {
    
 }
 
+#img3 {
+    width: 80%;
+    top: -2%;
+    margin-left: 20%;   
+    position:absolute;
+    z-index: 999;
+}
+
 /* HEADER CONTAINER W/ VIDEO AND ARROW */
 
 .header-box {
@@ -87,7 +95,8 @@ body {
 
 .flex-container {
             display: flex;
-            margin-top: 2%;
+            margin-top: 40%;
+            margin-bottom: 30%;
             flex-direction: row;
             justify-content: center;
             align-items: center;
