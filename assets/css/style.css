@@ -152,7 +152,7 @@ body {
 
 .video-container iframe {
     aspect-ratio: 16 / 9;
-    position: relative;
+    position: absolute;
     top: 22%;
     left: 10.8%;
     width: 70%;
