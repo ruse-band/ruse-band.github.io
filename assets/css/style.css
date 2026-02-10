@@ -127,50 +127,103 @@ body {
 /* YOUTUBE EMBED */
 
 .video-container {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
     position: relative;
     z-index: 0;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
-    margin-top: 10%;
-    border: ghostwhite;
+    margin-top: 6%;
+    background-image: url(images/Vintage\ TV.png);
+     /* Position the image */
+    background-position: center center; 
+    
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat; 
+    
+    /* This is the crucial line: it fixes the background in place */
+   
+    
+    /* Scale the background image to be as large as possible so that the background area is completely covered by the background image (no white space) */
+    background-size: cover; 
+  
     
 }
 
 .video-container iframe {
+    aspect-ratio: 16 / 9;
     position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 22%;
+    left: 10.8%;
+    width: 70%;
+    height: auto;
     border-radius: 5%;
 }
 
 /* BANDSINTOWN EMBED */
 
-.bandsintown-segment{
+.bandsintown-segment {
     margin-top: 10%
 }
 
 /* BANDCAMP EMBED */
 
-.bandcamp-tracks {
-    
-    z-index: 100;
-    display: grid;
-    
-    align-items: center;
-    
-    justify-content: center;
+.vampire-dreams {
+    display: flex;
+    justify-content: center; 
     margin: 10%;
-    
+    margin-top: 20%;
+    background-color: #aa0101;
+    background-size: auto;
 }
 
-.bandcamp-tracks iframe {
-    border-color: ghostwhite;
-    margin: 5%;
-    border-radius: 5%;
+.honey-sweet {
+    display: flex;
+    justify-content: center; 
+    margin: 10%;
+    margin-top: 20%;
+    background-color: #fffda1;
+    margin-bottom: 20%;
 }
+
+/* INSTAGRAM WIDGET */
+/*
+.instgram.widget {
+    position: relative;
+    display: inline-block;
+}
+
+.iframe-overlay {
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Black background with 50% opacity */
+    /* background-color: rgba(0, 0, 0, 1); 
+    z-index: 100; /* Ensures it is on top 
+    }
+
+
+ /*
+.sk-instagram-feed {
+    display: block;
+    margin-top: 20%;
+    z-index: 1;
+
+}
+    */
+
+.instagram-container {
+   margin-top: 20%;
+   margin-left: 10%;
+
+}
+
+.elfsight.widget {
+    width: auto;
+}
+
 
 
  /* Scale the background image to be as large as possible so that the background area is completely covered by the background image (no white space) 
