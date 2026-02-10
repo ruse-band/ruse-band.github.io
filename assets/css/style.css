@@ -154,27 +154,19 @@ body {
 
 /* BANDCAMP EMBED */
 
-.bandcamp-embed {
+.bandcamp-tracks {
     
     z-index: 100;
     display: grid;
     
     align-items: center;
-    background-image: url(images/Proto\ With\ Baseball\ Bat\ -\ Black\ and\ White\ .png);
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-size: cover; 
-    background-color: #1d0c79;
+    
     justify-content: center;
     margin: 10%;
-    border-color: ghostwhite;
-    border-style: outset;
-    border-radius: 5%;
-
+    
 }
 
-.bandcamp-embed iframe {
+.bandcamp-tracks iframe {
     border-color: ghostwhite;
     margin: 5%;
     border-radius: 5%;
