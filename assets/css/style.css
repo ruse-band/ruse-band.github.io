@@ -24,6 +24,12 @@ body {
 }
 
 
+.empty-space {
+    height: 10rem;
+}
+
+
+
 /* LOGO AND GRAPHIC */
 
 .fixed-image {
@@ -162,6 +168,7 @@ body {
     height: 100%;
     margin: 0 auto;
     margin-top: 6%;
+    margin-top: 6%;
    /* background-image: url(images/Vintage\ TV.png); */
      /* Position the image */
     background-position: center center; 
@@ -191,19 +198,13 @@ body {
     
 }
 
-/* BANDSINTOWN EMBED */
-
-.bandsintown-segment {
-    margin-top: 10%
-}
-
-
 /* BANDCAMP EMBED */
 
 
 .bandcamp-links {
     position: relative;
-    height: 50rem;
+    
+    max-width: 100%;
     width: 100%;
 }
 
@@ -218,14 +219,29 @@ body {
 .bandcamp-embeds {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    width: 80%;
-    height: 150%;
-    margin-left: 10%;
+    max-width: 700px;
+    
+    
 }
 
-.empty-space {
-    height: 14rem;
+.vampire-dreams {
+    margin-top: -15%;
+    margin-left: 40%;
+}
+
+.honey-sweet {
+    margin-top: 50%;
+    margin-left: -5%;
+}
+
+
+/* BANDSINTOWN EMBED */
+
+.bandsintown-segment {
+    margin-top: 15%
 }
 
 
@@ -240,7 +256,7 @@ body {
 
 .iframe-overlay {
  
-    top: 0;
+    top: 5%;
     left: 0;
     width: 100%;
     height: 100%;
