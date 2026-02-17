@@ -223,18 +223,16 @@ body {
     align-items: center;
     flex-direction: column;
     max-width: 700px;
-    
-    
 }
 
 .vampire-dreams {
-    margin-top: -15%;
-    margin-left: 40%;
+    margin-top: -20%;
+    margin-left: 5%;
 }
 
 .honey-sweet {
-    margin-top: 50%;
-    margin-left: -5%;
+    margin-top: 42%;
+    margin-left: 0;
 }
 
 
