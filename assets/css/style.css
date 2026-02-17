@@ -197,25 +197,39 @@ body {
     margin-top: 10%
 }
 
+
 /* BANDCAMP EMBED */
 
-.vampire-dreams {
-    display: flex;
-    justify-content: center; 
-    margin: 10%;
-    margin-top: 20%;
-    background-color: #aa0101;
-    background-size: auto;
+
+.bandcamp-links {
+    position: relative;
+    height: 50rem;
+    width: 100%;
 }
 
-.honey-sweet {
-    display: flex;
-    justify-content: center; 
-    margin: 10%;
-    margin-top: 20%;
-    background-color: #fffda1;
-    margin-bottom: 20%;
+.background-record {
+    position: absolute;
+    width: 100%;
+    margin-left: 40%;
+    height: auto;
+    display: block;
+    width: 0 auto;
 }
+
+.bandcamp-embeds {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 150%;
+}
+
+.empty-space {
+    height: 13rem;
+}
+
+
+
 
 /* INSTAGRAM WIDGET */
 
@@ -252,11 +266,7 @@ body {
 
 }
 
-.elfsight.widget {
-    display: block;
-    width: 1vw;
-    max-width: 200%;
-}
+
 
 
 
