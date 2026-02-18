@@ -48,8 +48,8 @@ body {
 #img2 {
     top: 0%;
     left: 0%;
-    width: 45%;
-    height: auto;
+    width: auto;
+    height: 10%;
    
 }
 
@@ -71,9 +71,10 @@ body {
 }
 
 #img5 {
-    width: 70%;
-    top: -88%;
-    margin-left: 11%;   
+    width: 65%;
+    height: auto;
+    top: -80%;
+    margin-left: 14%;   
     position: absolute;
     z-index: 99;
 
