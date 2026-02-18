@@ -5,7 +5,7 @@
 }
 
 body {
-     /*background-image: url(images/A7409511.jpg);
+    background-image: url(images/A7409511.jpg);
 
     /* Position the image */
     background-position: center center; 
@@ -76,8 +76,6 @@ body {
     position: relative; /* Container acts as anchor */
     z-index: 100;
     margin: 5%;
-
-    
   }
 
   .floating-arrow {
@@ -160,6 +158,18 @@ body {
 
 /* YOUTUBE EMBED */
 
+.YT-Header {
+    text-align: center;
+    font: times;
+    font-size: 400%;
+    color: #4400ff;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 42%;
+    margin-left: 8%;
+
+}
+
 .video-container {
     aspect-ratio: 1 / 1;
     position: relative;
@@ -202,10 +212,12 @@ body {
 
 
 .bandcamp-links {
+    margin-top: 25%;
+    margin-bottom: 25%;
     position: relative;
-    
     max-width: 100%;
     width: 100%;
+    height: 100%;
 }
 
 .background-record {
