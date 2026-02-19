@@ -251,9 +251,9 @@ body {
     flex-direction: column;
     justify-content: right;
     align-items: right;
-    max-width: 100%;
+    max-width: 20%;
     position: relative;
-    margin-left: 80%;
+    margin-left: 2%;
     
 }
 
@@ -311,9 +311,10 @@ body {
     flex-direction: column;
     justify-content: right;
     align-items: right;
-    max-width: 100%;
+    max-width: 20%;
     position: relative;
-    margin-left: 80%;
+    margin-left: 2%;
+    margin-top: 8%;
     
  
 }
