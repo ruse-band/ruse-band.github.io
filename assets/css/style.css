@@ -156,6 +156,7 @@ body {
     cursor: pointer; /* Ensures it looks clickable */
     margin: 4%;
     max-width: 90%;
+    border-style: groove;
     
 }
 
@@ -181,6 +182,7 @@ body {
     transition: background-color 0.3s; /* Smooth hover effect */
     cursor: pointer; /* Ensures it looks clickable */
     max-width: 100%;
+    border-style: groove;
 }
 
 .icon-button2:hover {
@@ -188,7 +190,7 @@ body {
 }
 
 .empty-space1 {
-    height: 100%;
+    height: 80%;
 
 }
 
@@ -198,7 +200,7 @@ body {
     text-align: center;
     font: times;
     font-size: 400%;
-    color: #4400ff;
+    color: #4d21c7;
     font-weight: bold;
     text-decoration: underline;
     margin-bottom: 42%;
@@ -231,6 +233,10 @@ body {
     
 }
 
+.video-container img {
+    z-index: 100;
+}
+
 .video-container iframe {
     aspect-ratio: 1 / 0.75;
     position: absolute;
@@ -239,7 +245,7 @@ body {
     width: 66%;
     height: auto;
     border-radius: 10%;
-    z-index: 98;
+    z-index: 101;
     border-color: transparent;
     
 }
