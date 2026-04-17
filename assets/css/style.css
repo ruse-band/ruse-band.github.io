@@ -80,12 +80,32 @@ body {
 
 }
 
+
+/* HEADER FOR PAGE TITLES */
+
+header {
+  display: block;
+  font-style: normal;
+  color: rgb(88, 11, 133);
+  font-family: "Sixtyfour", sans-serif;
+  font-size: 9rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-top: 30%;
+  
+
+}
+
+
+
 /* HEADER CONTAINER W/ VIDEO AND ARROW */
 
 .header-box {
     position: relative; /* Container acts as anchor */
     z-index: 100;
     margin: 5%;
+   
   }
 
   .floating-arrow {
@@ -113,14 +133,118 @@ body {
 
   }
 
- 
+  /* SOCIAL LINKS */
+
+ .social-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0%;
+    width: 100%;
+    
+    
+    
+}
+
+.social-links div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 13%;
+    
+   
+}
+
+.social-button {
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    /* background-color: #bb2727;  Button background color */
+    background-size: 100%;
+    color: #be24ec; /* Text and icon color */
+    text-decoration: none; /* Removes default underline from links */
+    /* border-radius: 10rem; /* Adds rounded corners */
+    font-weight: bold; /* Makes text bold */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    background-color: rgba(255, 255, 255, 0) ;
+    cursor: pointer; /* Ensures it looks clickable */
+    max-width: 100%;
+    /* border-style: groove;*/
+    font-size: 800%;
+    margin-bottom: 50%;
+   
+}
+
+.social-button:hover {
+    background-color: #a644e7; /* Darker background on hover */
+}
+
+/* PORTALS */
+
+.portals {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-content: space-between;
+    margin-bottom: 10%;
+    margin-top: 0%;
+}
+
+.portals div {
+
+    width: 46%;
+    margin: 2%;
+}
+
+.portal-button {
+    font-family: "Nabla", system-ui;
+    font-variation-settings:
+    "EDPT" 200,
+    "EHLT" 12;
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    background-color: #581355;
+
+    /* background-color: #ce2d6f; /* Button background color */
+    background-size: 100%;
+    color: white; /* Text and icon color */
+    text-decoration: none; /* Removes default underline from links */
+    
+    font-size: 300%;
+    transition: background-color 0.3s; /* Smooth hover effect */
+    cursor: pointer; /* Ensures it looks clickable */
+    border-style: inset;
+    width: 100%; 
+    padding: 5%;
+    box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
+    animation-name: pulse-glow;
+    animation-duration: 10s;
+    /* animation-iteration-count: infinite;  repeats forever */ 
+    
+}
+
+/* Old Pulse Animation - Unused */
+
+@keyframes pulse-glow {
+  from {
+    box-shadow: 0 0 5px #75faff, 0 0 10px #75faff;
+  }
+  to {
+    box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
+  }
+}
+
+
 
 /* STREAMING LINKS */
 
-.flex-container {
+.streaming-links {
     display: flex;
-    margin-top: 21%;
-    margin-bottom: 110%;
+    margin-top: 0;
+    margin-bottom: 0%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -129,7 +253,7 @@ body {
            
     }
 
-.flex-container div {
+.streaming-links div {
             
     margin: 0 auto;
     padding: 0px;
@@ -142,21 +266,29 @@ body {
     }
 
 .icon-button {
+    font-family: "Nabla", system-ui;
+    font-variation-settings:
+    "EDPT" 200,
+    "EHLT" 12;
     display: inline-flex; /* Allows icon and text to align nicely */
     align-items: center; /* Vertically centers the items */
     justify-content: center; /* Centers items horizontally */
     width: 100%;
-    background-color: #4400ff; /* Button background color */
+    background-color: #581355; /* Button background color */
     background-size: 100%;
     color: white; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
-    border-radius: 10rem; /* Adds rounded corners */
+    border-radius: 0; /* Adds rounded corners */
     font-weight: bold; /* Makes text bold */
     transition: background-color 0.3s; /* Smooth hover effect */
     cursor: pointer; /* Ensures it looks clickable */
     margin: 4%;
     max-width: 90%;
     border-style: groove;
+    box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
+    animation-name: pulse-glow;
+    animation-duration: 10s;
+
     
 }
 
@@ -216,7 +348,7 @@ body {
     height: 100%;
     margin: 0 auto;
     
-    margin-top: 6%;
+    margin-top: 90%;
    /* background-image: url(images/Vintage\ TV.png); */
      /* Position the image */
     background-position: center center; 
@@ -241,10 +373,10 @@ body {
     aspect-ratio: 1 / 0.75;
     position: absolute;
     margin-top: 13%;
-    left: 10%;
-    width: 66%;
+    left: 10.5%;
+    width: 65%;
     height: auto;
-    border-radius: 10%;
+    border-radius: 12%;
     z-index: 101;
     border-color: transparent;
     
@@ -276,8 +408,8 @@ body {
 
 
 .bandcamp-links {
-    margin-top: 25%;
-    margin-bottom: 35%;
+    margin-top: 50%;
+    margin-bottom: 20%;
     position: relative;
     max-width: 100%;
     width: 100%;
@@ -517,4 +649,37 @@ body {
 }
 
 
+
+
+/* MAIN PAGE BUTTON */
+
+   .mainpage-link {
+        display: flex;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 15%;
+        margin-bottom: 5%;
+}
+
+    .mainpage-button {
+        font-family: "Special Elite", system-ui;
+        display: inline-flex; /* Allows icon and text to align nicely */
+        align-items: center; /* Vertically centers the items */
+        justify-content: center; /* Centers items horizontally */
+        background-color: #000000; /* Button background color */
+        background-size: 90%;
+        color: white; /* Text and icon color */
+        text-decoration: none; /* Removes default underline from links */
+        font-weight: bold; /* Makes text bold */
+        font-size: 120%;
+        transition: background-color 0.3s; /* Smooth hover effect */
+        cursor: pointer; /* Ensures it looks clickable */
+        border-style: inset;
+        width: fit-content; 
+        margin-left: auto;
+        margin-right: auto;
+        padding: 3%;
+        border-radius: 25%;
+        border-color: #9a3fb6;
+}
 
