@@ -43,6 +43,7 @@ body {
     right: 2%; /* Distance from right of screen */
     width: auto;
     height: 12%;
+    z-index: -1;
 }
 
 #img2 {
@@ -105,6 +106,7 @@ header {
     position: relative; /* Container acts as anchor */
     z-index: 100;
     margin: 5%;
+    margin-top: -4%;
    
   }
 
@@ -133,6 +135,13 @@ header {
 
   }
 
+  /* MAIN SECTION LINKS */
+
+  .main-section {
+    margin-top: 8%;
+  }
+
+
   /* SOCIAL LINKS */
 
  .social-links {
@@ -141,6 +150,8 @@ header {
     flex-direction: row;
     margin: 0%;
     width: 100%;
+    margin-top: -12%;
+  
     
     
     
@@ -151,6 +162,7 @@ header {
     flex-direction: row;
     margin-top: 13%;
     
+    
    
 }
 
@@ -160,12 +172,13 @@ header {
     justify-content: center; /* Centers items horizontally */
     /* background-color: #bb2727;  Button background color */
     background-size: 100%;
-    color: #be24ec; /* Text and icon color */
+    color: #581355; /* Text and icon color */
+    background-color: #d32891;
     text-decoration: none; /* Removes default underline from links */
     /* border-radius: 10rem; /* Adds rounded corners */
     font-weight: bold; /* Makes text bold */
     transition: background-color 0.3s; /* Smooth hover effect */
-    background-color: rgba(255, 255, 255, 0) ;
+    border-style: outset;
     cursor: pointer; /* Ensures it looks clickable */
     max-width: 100%;
     /* border-style: groove;*/
@@ -175,7 +188,7 @@ header {
 }
 
 .social-button:hover {
-    background-color: #a644e7; /* Darker background on hover */
+    background-color: #581355; /* Darker background on hover */
 }
 
 /* PORTALS */
@@ -203,6 +216,7 @@ header {
     font-variation-settings:
     "EDPT" 200,
     "EHLT" 12;
+   
     display: inline-flex; /* Allows icon and text to align nicely */
     align-items: center; /* Vertically centers the items */
     justify-content: center; /* Centers items horizontally */
@@ -655,14 +669,14 @@ header {
 
    .mainpage-link {
         display: flex;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 15%;
+        margin-left: 5%;
+        margin-right: 80%;
+        margin-top: 25%;
         margin-bottom: 5%;
 }
 
     .mainpage-button {
-        font-family: "Special Elite", system-ui;
+        font-family: "Sixtyfour", sans-serif;
         display: inline-flex; /* Allows icon and text to align nicely */
         align-items: center; /* Vertically centers the items */
         justify-content: center; /* Centers items horizontally */
@@ -671,7 +685,7 @@ header {
         color: white; /* Text and icon color */
         text-decoration: none; /* Removes default underline from links */
         font-weight: bold; /* Makes text bold */
-        font-size: 120%;
+        font-size: 200%;
         transition: background-color 0.3s; /* Smooth hover effect */
         cursor: pointer; /* Ensures it looks clickable */
         border-style: inset;
@@ -679,7 +693,7 @@ header {
         margin-left: auto;
         margin-right: auto;
         padding: 3%;
-        border-radius: 25%;
-        border-color: #9a3fb6;
+        border-radius: 2%;
+        border-color:rgb(88, 11, 133);
 }
 
