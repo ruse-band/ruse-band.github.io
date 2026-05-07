@@ -21,7 +21,7 @@
 
 <!-- FLOATING IMAGES -->
 
-    <img src="images/proto-with-bat.png" class="fixed-image" alt="Fixed floating box" id="img1" />
+    <img src="images/proto-with-bat.png" class="fixed-image" style="display: none;" id="img1" />
 
     <img src="video/RUSE Logo Anim - Fitted Transparency.webp" class="fixed-image" alt="Fixed floating box" id="img2" />
 
@@ -30,6 +30,13 @@
 <div class="main-section">
 
 <!-- VIDEO HEADER -->
+
+
+<div class="loader" id="loader" style="margin-bottom: 100%;">
+    <img src="video/mailbox animation gif.gif">
+</div>
+    
+
 
     <div class="header-box">
 
@@ -195,6 +202,28 @@
 
 
     </div>
+
+
+
+    <!-- JAVASCRPT -->
+
+<script>
+
+
+window.addEventListener("load", function() {
+    var loader = document.getElementById("loader");
+    loader.style.display = "none";
+});
+
+
+
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('img1').style.display = 'block';
+    }, 4000); // 3000 milliseconds = 3 seconds
+};
+
+</script>
 
 
 
