@@ -82,6 +82,9 @@ body {
 
 }
 
+#img7 {
+    position:absolute;
+}
 
 
 
@@ -504,10 +507,9 @@ header {
 }
 
 .listen-image {
-    width: 75%;
-    margin-left: 33%;
+    width: 55%;
+    margin-left: 45%;
 }
-
 
 
 
