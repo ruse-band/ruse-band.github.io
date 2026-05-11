@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(images/A7409511.jpg);
+     /* background-image: url(images/A7409511.jpg);
 
     /* Position the image */
     background-position: center center; 
@@ -19,7 +19,7 @@ body {
     /* Scale the background image to be as large as possible so that the background area is completely covered by the background image (no white space) */
     background-size: cover; 
     
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(57, 46, 63);
     font-family: Arial, Helvetica, sans-serif, serif; /* A font stack */
 }
 
@@ -93,10 +93,10 @@ body {
 header {
   display: block;
   font-style: normal;
-  color: rgb(88, 11, 133);
-  font-family: "Sixtyfour", sans-serif;
+  color: #d2f5f7;
+  font-family: "Silkscreen", sans-serif;
   font-size: 9rem;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   text-align: center;
   margin-top: 30%;
@@ -112,7 +112,7 @@ header {
     position: relative; /* Container acts as anchor */
     z-index: 100;
     margin: 5%;
-    margin-top: -4%;
+    margin-top: -8%;
    
   }
 
@@ -233,7 +233,7 @@ header {
     background-size: 100%;
     color: white; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
-    
+    border-radius: 35%;
     font-size: 300%;
     transition: background-color 0.3s; /* Smooth hover effect */
     cursor: pointer; /* Ensures it looks clickable */
@@ -287,10 +287,9 @@ header {
     }
 
 .icon-button {
-    font-family: "Nabla", system-ui;
-    font-variation-settings:
-    "EDPT" 200,
-    "EHLT" 12;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-size: 6rem;
     display: inline-flex; /* Allows icon and text to align nicely */
     align-items: center; /* Vertically centers the items */
     justify-content: center; /* Centers items horizontally */
@@ -508,7 +507,8 @@ header {
 
 .listen-image {
     width: 55%;
-    margin-left: 45%;
+    margin-left: 40%;
+    margin-bottom: 10%;
 }
 
 
@@ -633,10 +633,9 @@ header {
 
    .mainpage-link {
         display: flex;
-        margin-left: 5%;
-        margin-right: 80%;
-        margin-top: 25%;
-        margin-bottom: 5%;
+     
+       
+   
 }
 
     .mainpage-button {
@@ -644,7 +643,7 @@ header {
         display: inline-flex; /* Allows icon and text to align nicely */
         align-items: center; /* Vertically centers the items */
         justify-content: center; /* Centers items horizontally */
-        background-color: #000000; /* Button background color */
+        background-color: #00000070; /* Button background color */
         background-size: 90%;
         color: white; /* Text and icon color */
         text-decoration: none; /* Removes default underline from links */
@@ -659,5 +658,6 @@ header {
         padding: 3%;
         border-radius: 2%;
         border-color:rgb(88, 11, 133);
+        margin-top: 10%;
 }
 
