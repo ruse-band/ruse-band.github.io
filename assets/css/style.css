@@ -61,6 +61,7 @@ body {
     margin-top: -10%;   
     position: absolute;
     z-index: 999;
+    
 }
 
 #img4 {
@@ -90,6 +91,7 @@ body {
 
 /* HEADER FOR PAGE TITLES */
 
+
 header {
   display: block;
   font-style: normal;
@@ -102,6 +104,18 @@ header {
   margin-top: 30%;
   
 
+}
+
+h1 {
+  display: block;
+  font-style: normal;
+  color: #d2f5f7;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  
 }
 
 
@@ -157,6 +171,7 @@ header {
     margin: 0%;
     width: 100%;
     margin-top: -12%;
+    
     z-index: 1001;
   
     
@@ -168,6 +183,7 @@ header {
     display: flex;
     flex-direction: row;
     margin-top: 13%;
+  
     
     
    
@@ -179,8 +195,8 @@ header {
     justify-content: center; /* Centers items horizontally */
     /* background-color: #bb2727;  Button background color */
     background-size: 100%;
-    color: #581355; /* Text and icon color */
-    background-color: #d32891;
+    color: #bde3fc; /* Text and icon color */
+    background-color: #581355;
     text-decoration: none; /* Removes default underline from links */
     /* border-radius: 10rem; /* Adds rounded corners */
     font-weight: bold; /* Makes text bold */
@@ -190,7 +206,12 @@ header {
     max-width: 100%;
     /* border-style: groove;*/
     font-size: 800%;
+    margin-top: 20%;
     margin-bottom: 50%;
+    border-radius: 10%;
+    box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
+    animation-name: pulse-glow;
+    animation-duration: 10s;
    
 }
 
@@ -219,10 +240,10 @@ header {
 }
 
 .portal-button {
-    font-family: "Nabla", system-ui;
-    font-variation-settings:
-    "EDPT" 200,
-    "EHLT" 12;
+     font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
    
     display: inline-flex; /* Allows icon and text to align nicely */
     align-items: center; /* Vertically centers the items */
@@ -231,10 +252,10 @@ header {
 
     /* background-color: #ce2d6f; /* Button background color */
     background-size: 100%;
-    color: white; /* Text and icon color */
+    color: #bde3fc; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
     border-radius: 35%;
-    font-size: 300%;
+    font-size: 450%;
     transition: background-color 0.3s; /* Smooth hover effect */
     cursor: pointer; /* Ensures it looks clickable */
     border-style: inset;
@@ -288,15 +309,15 @@ header {
 
 .icon-button {
     font-family: "Silkscreen", sans-serif;
-    font-weight: 700;
-    font-size: 6rem;
+    font-weight: 400;
+    font-size: 5rem;
     display: inline-flex; /* Allows icon and text to align nicely */
     align-items: center; /* Vertically centers the items */
     justify-content: center; /* Centers items horizontally */
     width: 100%;
     background-color: #581355; /* Button background color */
     background-size: 100%;
-    color: white; /* Text and icon color */
+    color: #bde3fc; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
     border-radius: 0; /* Adds rounded corners */
     font-weight: bold; /* Makes text bold */
@@ -308,6 +329,7 @@ header {
     box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
     animation-name: pulse-glow;
     animation-duration: 10s;
+    margin-bottom: 10%;
 
     
 }
@@ -658,6 +680,6 @@ header {
         padding: 3%;
         border-radius: 2%;
         border-color:rgb(88, 11, 133);
-        margin-top: 10%;
+        margin-top: 20%;
 }
 
