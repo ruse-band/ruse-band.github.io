@@ -107,6 +107,10 @@ html {
 }
 
 
+.spotify-player-desktop {
+    display: none;
+}
+
 /* HEADER FOR PAGE TITLES */
 
 
@@ -776,6 +780,16 @@ h1 {
 
 
 
+.mal-contact {
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: -20%;
+}
+
+.mal-instagram {
+    margin-top: -8%;
+}
+
 /* MAIN PAGE BUTTON */
 
    .mainpage-link {
@@ -809,3 +823,257 @@ h1 {
         margin-top: 20%;
 }
 
+
+.desktop-disclaimer {
+    display: none;
+}
+
+
+
+
+
+/* DESKTOP VERSION */
+
+
+@media screen and (min-width: 1024px) {
+
+ /* HEADER CONTAINER W/ VIDEO AND TV */
+ 
+.loader-video {
+  display: flex;  
+  width: 300%;
+  justify-content: center;
+  
+ 
+}
+
+
+.main-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.tv-plus-social-links {
+    margin-top: -20%;
+}
+
+
+.header-box {
+    position: relative; /* Container acts as anchor */
+    z-index: 100;
+    margin: 5%;
+  }
+
+
+  .spotify-player-desktop {
+    display: block;
+    justify-content: end;
+    position: fixed;
+    z-index: 2000; /* High value to stay above all other elements */
+    max-width: 100%;
+    top: 2%; /* Distance from bottom of screen */
+    right: 2%; /* Distance from right of screen */
+}
+  
+  /* MAIN SECTION */
+
+  .main-section {
+    margin-top: 22%;
+  }
+
+
+  /* SOCIAL LINKS */
+
+ .social-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0%;
+    width: 100%;
+    margin-top: -12%;
+    z-index: 1001;
+  
+}
+
+.social-links div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 13%;
+}
+
+.social-button {
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    /* background-color: #bb2727;  Button background color */
+    background-size: 100%;
+    color: #bde3fc; /* Text and icon color */
+    background-color: #581355;
+    text-decoration: none; /* Removes default underline from links */
+    /* border-radius: 10rem; /* Adds rounded corners */
+    font-weight: bold; /* Makes text bold */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    border-style: outset;
+    cursor: pointer; /* Ensures it looks clickable */
+    max-width: 100%;
+    /* border-style: groove;*/
+    font-size: 400%;
+    margin-top: 20%;
+    margin-bottom: 50%;
+    border-radius: 10%;
+    box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
+    animation-name: pulse-glow;
+    animation-duration: 10s;
+   
+}
+
+.social-button:hover {
+    background-color: #581355; /* Darker background on hover */
+}
+
+/* PORTALS */
+
+.portals {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-content: space-between;
+    margin-bottom: 10%;
+    margin-top: -5%;
+    z-index: 0;
+}
+
+.portals div {
+
+    width: 25%;
+    margin: 2%;
+}
+
+.portal-button {
+     font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+   
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    background-color: #581355;
+
+    /* background-color: #ce2d6f; /* Button background color */
+    background-size: 100%;
+    color: #bde3fc; /* Text and icon color */
+    text-decoration: none; /* Removes default underline from links */
+    border-radius: 35%;
+    font-size: 200%;
+    transition: background-color 0.3s; /* Smooth hover effect */
+    cursor: pointer; /* Ensures it looks clickable */
+    border-style: inset;
+    width: 100%; 
+    padding: 5%;
+    box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
+    animation-name: pulse-glow;
+    animation-duration: 10s;
+    /* animation-iteration-count: infinite;  repeats forever */ 
+    
+}
+
+/* Old Pulse Animation - Unused */
+
+@keyframes pulse-glow {
+  from {
+    box-shadow: 0 0 5px #75faff, 0 0 10px #75faff;
+  }
+  to {
+    box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
+  }
+}
+
+
+.desktop-disclaimer {
+    display: block;
+}
+
+
+.the-booth {
+    display: none;
+}
+
+
+/* BANDCAMP EMBED */
+
+
+.bandcamp-links {
+    margin-top: 30%;
+    margin-bottom: 20%;
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+   
+}
+
+.background-record {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: block;
+    width: 0 auto;
+}
+
+.bandcamp-embeds {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+}
+
+.vampire-dreams {
+    margin-top: -20%;
+    margin-left: 5%;
+}
+
+.honey-sweet {
+    margin-top: 42%;
+    margin-left: 0;
+}
+
+.bandcamp-artist {
+    display: flex;
+    margin-bottom: 50%;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    max-width: 20%;
+    position: relative;
+    margin-left: 2%;
+    margin-top: 8%;
+    
+ 
+}
+
+.bandcamp-artist div {
+
+    padding: 0px;
+    font-size: 10rem;
+    width: 100%; 
+    height: 50%;
+    max-width: 100%;
+}
+
+
+.mal-contact {
+    margin-top: 20%;
+    font-size: 1rem;
+    display: none;
+}
+
+
+}
