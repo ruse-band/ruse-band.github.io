@@ -397,7 +397,23 @@ h1 {
 
 
 
+
+/* LISTEN PAGE */
+
+.listen-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
 /* LISTEN PAGE - STREAMING LINKS */
+
+
+.listen-image {
+    width: 80%;
+   
+}
 
 .streaming-links {
     display: flex;
@@ -567,19 +583,7 @@ h1 {
 
 
 
-/* LISTEN PAGE */
 
-.listen-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
-}
-
-.listen-image {
-    width: 80%;
-   
-}
 
 
 
@@ -1074,6 +1078,109 @@ h1 {
     font-size: 1rem;
     display: none;
 }
+
+
+/* LISTEN PAGE */
+
+.listen-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-top: -6%;
+}
+
+/* LISTEN PAGE - STREAMING LINKS */
+
+
+.listen-image {
+    width: 40%;
+   
+}
+
+.streaming-links {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    position: relative;
+           
+    }
+
+.streaming-links div {
+            
+    margin: 0 auto;
+    padding: 0px;
+    font-size: 5rem;
+    width: 40%; 
+    height: 50%;
+    max-width: 100%;
+    
+        
+    }
+
+.icon-button {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    width: 100%;
+    background-color: #581355; /* Button background color */
+    background-size: 100%;
+    color: #bde3fc; /* Text and icon color */
+    text-decoration: none; /* Removes default underline from links */
+    border-radius: 0; /* Adds rounded corners */
+    font-weight: bold; /* Makes text bold */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    cursor: pointer; /* Ensures it looks clickable */
+    margin: 4%;
+    max-width: 90%;
+    border-style: groove;
+    box-shadow: 0 0 20px #75faff, 0 0 40px #75faff, 0 0 60px #ae21ff;
+    animation-name: pulse-glow;
+    animation-duration: 10s;
+    margin-bottom: 10%;
+
+    
+}
+
+.icon-button i {
+    margin-right: 8px; /* Adds space between the icon and text */
+}
+
+.icon-button:hover {
+    background-color: #000000; /* Darker background on hover */
+}
+
+.icon-button2 {
+    display: inline-flex; /* Allows icon and text to align nicely */
+    align-items: center; /* Vertically centers the items */
+    justify-content: center; /* Centers items horizontally */
+    width: 100%;
+    background-color: #4400ff; /* Button background color */
+    background-size: 100%;
+    color: white; /* Text and icon color */
+    text-decoration: none; /* Removes default underline from links */
+    border-radius: 10rem; /* Adds rounded corners */
+    font-weight: bold; /* Makes text bold */
+    transition: background-color 0.3s; /* Smooth hover effect */
+    cursor: pointer; /* Ensures it looks clickable */
+    max-width: 100%;
+    border-style: groove;
+}
+
+.icon-button2:hover {
+    background-color: #000000; /* Darker background on hover */
+}
+
+
+
+
 
 
 }
