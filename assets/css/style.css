@@ -147,6 +147,9 @@ h1 {
 /* HEADER CONTAINER W/ VIDEO AND TV */
 
 
+#main-page {
+    display: none;
+}
   
 
   .floating-arrow {

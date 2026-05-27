@@ -55,7 +55,7 @@
     
 
 
-<div class="tv-plus-social-links">
+<div class="tv-plus-social-links" id="main-page">
 
     <div class="header-box">
 
@@ -88,12 +88,12 @@
     </div>
 -->
 
-<div class="beneath-tv">
+    <div class="beneath-tv">
 
 
    <!-- SOCIAL LINKS SECTION-->
     
-    <div class="social-links">
+        <div class="social-links">
 
             <div>
                 <a href="https://www.youtube.com/@somekindofruse" class="social-button" data-umami-event="Main Page Youtube Click">
@@ -126,12 +126,12 @@
                 <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
-    </div>
+        </div>
 
-</div>
+    </div>
 <!-- PORTALS SECTION-->
 
-<div class="portals">
+    <div class="portals">
 
 
         <div>
@@ -173,27 +173,27 @@
 
     </div>
 
-</div>
 
-
-</div>
-
-
-<div class="desktop-disclaimer">
-    <h1 style="font-size:1.75rem">Desktop site under construction</h1>
-</div>
 
 
 </div>
+
+
+    <div class="desktop-disclaimer">
+        <h1 style="font-size:1.75rem">Desktop site under construction</h1>
+    </div>
+
+
+
 
   
 
-<div class="spotify-player" style="display: none;">   
+    <div class="spotify-player" style="display: none;">   
 
-    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2Qg9J33Gr0uNcTNX6YD2JN?utm_source=generator" 
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2Qg9J33Gr0uNcTNX6YD2JN?utm_source=generator" 
             width="80%" height="352" frameBorder="0" allowfullscreen="" 
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-    </iframe>
+        </iframe>
 
 
     </div>
@@ -202,6 +202,7 @@
 
 </div>
 
+</div>
 
 
     <!-- JAVASCRPT -->
@@ -221,6 +222,12 @@ window.onload = function() {
         document.getElementById('img1').style.display = 'block';
     }, 4000); // 3000 milliseconds = 3 seconds
 };
+
+
+window.addEventListener('load', (event) => {
+  const element = document.getElementById('main-page');
+  element.style.display = 'block'; // Or 'flex', 'grid', etc.
+});
 
 
 
