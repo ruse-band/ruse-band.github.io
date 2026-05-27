@@ -13,6 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Margarine&family=Monofett&family=Nabla&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="preload" href="video/HeaderVideo-1.mov" as="video">
+    <link rel="preload" href="video/HeaderVideo-2.mov" as="video">
+    <link rel="preload" href="video/HeaderVideo-3.mov" as="video">
+
+
+
     <script src="assets/js/script.js"></script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="e4d178ac-0620-41e1-afb2-33329b18bb52"></script>
     
@@ -53,12 +59,25 @@
 
     <div class="header-box">
 
+
+
     <img src="images/Pink TV With Transparency-fixed.png" class="fixed-image" id="img3" />
 
-    <video style="width: 70%; height: auto; border: ghostwhite; border-radius: 5%; margin-top: 36%; margin-left: 15%;" loop autoplay playsinline muted>
-        <source src="video/QDB - Show Comp For Website.mov" type="video/mp4" media="(min-width: 200px)" class="tv-video"> 
-        <!-- <source src="video/Website Header - Vertical - Feb5.mp4" type="video/mp4" alt="Responsive Image"> -->
-    </video>
+    
+
+        <div class="video-container-layered">
+            <!-- Active player starts visible -->
+            <video id="playerA" class="video-layer visible" autoplay muted playsinline></video>
+            <!-- Hidden player stays ready in the background -->
+            <video id="playerB" class="video-layer hidden" muted playsinline></video>
+        </div>
+
+<!--
+    <video id="videoPlayer" style="width: 70%; height: auto; border: ghostwhite; border-radius: 5%; margin-top: 36%; margin-left: 15%;" autoplay playsinline muted>
+        <source id="videoSource" src="video/HeaderVideo-1.mov" type="video/mp4" media="(min-width: 200px)" class="tv-video"> 
+    </video>    
+-->
+
   
     </div>
 
@@ -69,6 +88,7 @@
     </div>
 -->
 
+<div class="beneath-tv">
 
 
    <!-- SOCIAL LINKS SECTION-->
@@ -156,6 +176,9 @@
 </div>
 
 
+</div>
+
+
 <div class="desktop-disclaimer">
     <h1 style="font-size:1.75rem">Desktop site under construction</h1>
 </div>
@@ -198,6 +221,47 @@ window.onload = function() {
         document.getElementById('img1').style.display = 'block';
     }, 4000); // 3000 milliseconds = 3 seconds
 };
+
+
+
+// List your video file paths in order
+    const playlist = ["video/HeaderVideo-1.mov", "video/HeaderVideo-2.mov", "video/HeaderVideo-3.mov"];
+    let currentTrack = 0;
+
+    const playerA = document.getElementById('playerA');
+    const playerB = document.getElementById('playerB');
+
+    // Initialize the first track on Player A and pre-prime Player B
+    playerA.src = playlist[0];
+    playerB.src = playlist[1];
+
+    function setupTransitions(currentPlayer, nextPlayer) {
+        currentPlayer.addEventListener('ended', function onEnded() {
+            // Remove listener so it doesn't double-trigger later
+            currentPlayer.removeEventListener('ended', onEnded);
+
+            // 1. Instantly swap visual visibility
+            currentPlayer.classList.replace('visible', 'hidden');
+            nextPlayer.classList.replace('hidden', 'visible');
+
+            // 2. Play the preloaded next video instantly
+            nextPlayer.play();
+
+            // 3. Move index forward for the next cycle
+            currentTrack = (currentTrack + 1) % playlist.length;
+            const upcomingTrack = (currentTrack + 1) % playlist.length;
+
+            // 4. Repurpose the old player to buffer the upcoming video
+            currentPlayer.src = playlist[upcomingTrack];
+            currentPlayer.load();
+
+            // 5. Alternate roles for the next 'ended' event
+            setupTransitions(nextPlayer, currentPlayer);
+        });
+    }
+
+    // Start the cycle
+    setupTransitions(playerA, playerB);
 
 </script>
 
