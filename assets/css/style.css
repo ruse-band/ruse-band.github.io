@@ -149,6 +149,7 @@ h1 {
 
 #main-page {
     display: none;
+    margin-bottom: 25%;
 }
   
 
@@ -881,6 +882,47 @@ h1 {
 }
 
 
+
+/* Layered Video Players */
+
+
+.header-box {
+    display: block;
+
+}
+
+     /* Stack both players exactly on top of each other */
+    .video-container-layered {
+        position: relative;
+        background: rgba(0, 0, 0, 0);
+      
+        
+    }
+    .video-layer {
+        position: absolute;
+        width: 70%;
+        height: auto;
+        border: ghostwhite;
+        border-radius: 5%;
+        margin-top: 30%;
+        margin-left: 15%;
+
+        
+    }
+    /* Smooth opacity transitions or instant toggles */
+    .visible { opacity: 1; z-index: 2; }
+    .hidden { opacity: 0; z-index: 1; }
+
+
+  /* MAIN SECTION LINKS */
+
+  .main-section {
+    margin-top: 8%;
+  }
+
+
+
+
 .main-section {
     display: flex;
     flex-direction: row;
@@ -888,6 +930,8 @@ h1 {
 
 .tv-plus-social-links {
     margin-top: -20%;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -895,6 +939,7 @@ h1 {
     position: relative; /* Container acts as anchor */
     z-index: 100;
     margin: 5%;
+    margin-top: 40%;
   }
 
 
@@ -923,7 +968,7 @@ h1 {
     flex-direction: row;
     margin: 0%;
     width: 100%;
-    margin-top: -12%;
+    margin-top: -40%;
     z-index: 1001;
   
 }
@@ -962,6 +1007,44 @@ h1 {
 
 .social-button:hover {
     background-color: #581355; /* Darker background on hover */
+}
+
+
+ /* Layered Video Players */
+
+
+     /* Stack both players exactly on top of each other */
+    .video-container-layered {
+        position: relative;
+        background: rgba(0, 0, 0, 0);
+      
+        
+    }
+    .video-layer {
+        position: absolute;
+        width: 70%;
+        height: auto;
+        border: ghostwhite;
+        border-radius: 5%;
+        margin-top: -28%;
+        margin-left: 15%;
+
+        
+    }
+    /* Smooth opacity transitions or instant toggles */
+    .visible { opacity: 1; z-index: 2; }
+    .hidden { opacity: 0; z-index: 1; }
+
+
+    
+#img3 {
+    width: 140%;
+    top: 0%;
+    margin-left: 0%;
+    margin-top: -78%;   
+    position: absolute;
+    z-index: 999;
+    
 }
 
 /* PORTALS */
