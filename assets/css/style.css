@@ -1327,6 +1327,85 @@ h1 {
 
 
 
+/* VIDEOS Page */
+
+
+
+.desktop-videos-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+.video-container {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    z-index: 0;
+    width: 40%;
+    margin: 0 auto;
+    
+    margin-top: 35%;
+   /* background-image: url(images/Vintage\ TV.png); */
+     /* Position the image */
+    background-position: center center; 
+    
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat; 
+    
+    /* This is the crucial line: it fixes the background in place */
+   
+    
+    /* Scale the background image to be as large as possible so that the background area is completely covered by the background image (no white space) */
+    background-size: cover; 
+  
+    
+}
+
+.video-container img {
+    z-index: 100;
+}
+
+.video-container iframe {
+    aspect-ratio: 1 / 0.75;
+    position: absolute;
+    margin-top: 13%;
+    left: 10.5%;
+    width: 65%;
+    height: auto;
+    border-radius: 12%;
+    z-index: 101;
+    border-color: transparent;
+    
+}
+
+.youtube-artist {
+    display: flex;
+    margin-top: -20%;
+    margin-bottom: 50%;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    max-width: 20%;
+    position: relative;
+    margin-left: 2%;
+    
+}
+
+.youtube-artist div {
+    margin: 0 auto;
+    padding: 0px;
+    font-size: 10rem;
+    width: 100%; 
+    height: 50%;
+    max-width: 100%;
+}
+
+
+
+
+
 
 
 }
