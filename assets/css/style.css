@@ -917,6 +917,8 @@ h1 {
 
 
 
+
+
 /* Layered Video Players */
 
 
@@ -950,9 +952,7 @@ h1 {
 
   /* MAIN SECTION LINKS */
 
-  .main-section {
-    margin-top: 8%;
-  }
+ 
 
 
 
@@ -960,6 +960,7 @@ h1 {
 .main-section {
     display: flex;
     flex-direction: row;
+    margin-top: 8%;
 }
 
 .tv-plus-social-links {
