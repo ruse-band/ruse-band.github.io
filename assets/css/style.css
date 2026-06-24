@@ -814,15 +814,20 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:5%;
    
 }
 
 .eventbrite button {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
-    font-size: 4rem;
-    margin-top: 10%;
-    background-color:#f50066
+    font-size: 5rem;
+    margin-top: 6%;
+    background-color:#d0b7e0;
+    color:#000000;
+    border-style: groove;
+    border-color: #bde3fc;
+    border-radius: 20px;
 }
 
 .show-poster {
@@ -831,7 +836,7 @@ h1 {
     margin: 4%;
     border: #bde3fc;
     border-style: groove;
-    margin-top: 15%;
+    margin-top: 25%;
 }
 
 

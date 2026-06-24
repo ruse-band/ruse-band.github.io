@@ -21,7 +21,7 @@
 
 <body> 
 
-    <header style="margin-top: 5%;">
+    <header>
         NEXT SHOW
     </header>
     <h1>
@@ -35,9 +35,13 @@
     <!-- Noscript content for added SEO -->
     <noscript><a href="https://www.eventbrite.com/e/ruses-music-video-and-single-launch-with-egan-chambers-and-jyraph-tickets-1992213266509" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
     <!-- You can customize this button any way you like -->
-    <button id="eventbrite-widget-modal-trigger-1992213266509" type="button">Buy Tickets</button>
+    <button id="eventbrite-widget-modal-trigger-1992213266509" type="button"> tap here to buy Tickets </button>
 </div>
 
+
+<h1>
+     ................
+    </h1>
 
         <div class="show-poster">
             <img src="images/July 17th L'Escogriffe Show Poster.jpg" style="width: 100%;">
@@ -65,6 +69,11 @@
     window.EBWidgets.createWidget({
         widgetType: 'checkout',
         eventId: '1992213266509',
+        themeSettings: {
+            brandColor: '#8c2eea',
+            fontColor: '#000000',
+            background: '#FFFFFF',
+        },
         modal: true,
         modalTriggerElementId: 'eventbrite-widget-modal-trigger-1992213266509',
         onOrderComplete: exampleCallback
