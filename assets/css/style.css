@@ -807,6 +807,34 @@ h1 {
 }
 
 
+
+/* SHOWS PAGE */
+
+.eventbrite  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.eventbrite button {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    margin-top: 10%;
+    background-color:#f50066
+}
+
+.show-poster {
+    display: flex;
+    max-width: 100%;
+    margin: 4%;
+    border: #bde3fc;
+    border-style: groove;
+    margin-top: 15%;
+}
+
+
 /* CONTACT PAGE */
 
 .contact-info {

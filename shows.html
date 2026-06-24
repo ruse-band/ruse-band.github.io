@@ -2,7 +2,7 @@
 <html>
 <head>
 
-    <title>RUSE - Listen</title>
+    <title>RUSE - Shows</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Nabla&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <script src="assets/js/script.js"></script>
+    <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="e4d178ac-0620-41e1-afb2-33329b18bb52"></script>
     
@@ -20,31 +21,56 @@
 
 <body> 
 
-    <header>
-        SHOWS
+    <header style="margin-top: 5%;">
+        NEXT SHOW
     </header>
     <h1>
-     ........
+     ................
     </h1>
-    <h1 style="font-size: 4rem; text-justify:inter-word">
-        NEXT SHOW: L'Escogriffe on July 17 - 2026
+    <h1 style="font-size: 4rem; text-justify:inter-word; margin-top: 4%;">
+        L'Escogriffe on July 17 With Egan Chambers and Jyraph
     </h1>
-    <h1>
-     ........
-    </h1>
-    <h1 style="font-size: 4rem; text-justify:inter-word">
-        MORE INFO TO COME
-    </h1>
+
+<div class="eventbrite">
+    <!-- Noscript content for added SEO -->
+    <noscript><a href="https://www.eventbrite.com/e/ruses-music-video-and-single-launch-with-egan-chambers-and-jyraph-tickets-1992213266509" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+    <!-- You can customize this button any way you like -->
+    <button id="eventbrite-widget-modal-trigger-1992213266509" type="button">Buy Tickets</button>
+</div>
+
+
+        <div class="show-poster">
+            <img src="images/July 17th L'Escogriffe Show Poster.jpg" style="width: 100%;">
+        </div>
+
+    
 
 
 
         <div class="mainpage-link">
 
-            <a href="index.html" class="mainpage-button">
+            <a href="index.html" class="mainpage-button" style="margin-top: 30%;">
             Main Page
             </a>
 
         </div>
+
+
+
+<script type="text/javascript">
+    var exampleCallback = function() {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '1992213266509',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-1992213266509',
+        onOrderComplete: exampleCallback
+    });
+</script>
+
 
 </body>
 
