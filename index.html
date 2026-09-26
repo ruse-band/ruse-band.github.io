@@ -25,7 +25,9 @@
 </head>
 
 <body>
-    
+
+
+
 
 <!-- FLOATING IMAGES -->
 
@@ -43,14 +45,14 @@
     </div>
 
 
+  
+
 
 <div class="main-section">
 
 <!-- VIDEO HEADER -->
 
-
-
-
+    
 
 <div class="loader" id="loader" style="margin-bottom: 100%;">
     <img src="video/Loading Screen-HD.gif" class="loader-video">
@@ -65,6 +67,14 @@
 
     <div class="header-box">
 
+        <div id="tap-zone">
+               <p>Tap anywhere in this box...</p>
+        </div>
+
+        <div id="my-popup" popover>
+                RUSE @ Quai Des Brumes
+        </div>
+    
 
 
     <img src="images/Pink TV With Transparency-fixed.png" class="fixed-image" id="img3" />
@@ -287,6 +297,25 @@ window.addEventListener('load', (event) => {
 
     // Start the cycle
     setupTransitions(playerA, playerB);
+
+
+    // Tap Zone Locator
+
+const tapZone = document.getElementById('tap-zone');
+const popup = document.getElementById('my-popup');
+
+tapZone.addEventListener('click', (event) => {
+  // 1. Get the exact X and Y coordinates of the tap
+  const x = event.clientX;
+  const y = event.clientY;
+
+  // 2. Position the popup slightly offset so it doesn't hide under the finger/mouse
+  popup.style.left = `${x + 10}px`;
+  popup.style.top = `${y + 10}px`;
+
+  // 3. Show the native popover 
+  popup.showPopover();
+});
 
 </script>
 
