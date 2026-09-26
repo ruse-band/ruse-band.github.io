@@ -603,6 +603,53 @@ h1 {
     
 }
 
+
+.video-container2 {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+    margin-top: 16%;
+   /* background-image: url(images/Vintage\ TV.png); */
+     /* Position the image */
+
+    margin-bottom: 10%;
+    background-position: center center; 
+    
+    /* Prevent the image from repeating */
+    background-repeat: no-repeat; 
+    
+    /* This is the crucial line: it fixes the background in place */
+   
+    
+    /* Scale the background image to be as large as possible so that the background area is completely covered by the background image (no white space) */
+    background-size: cover; 
+
+}
+
+
+.video-container2 img {
+    z-index: 100;
+}
+
+.video-container2 iframe {
+    aspect-ratio: 1 / 0.75;
+    position: absolute;
+    margin-top: 13%;
+    left: 10.5%;
+    width: 65%;
+    height: auto;
+    border-radius: 12%;
+    z-index: 101;
+    border-color: transparent;
+    
+}
+
+
+
 .youtube-artist {
     display: flex;
     margin-top: -20%;
