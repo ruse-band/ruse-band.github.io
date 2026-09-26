@@ -78,6 +78,7 @@ html {
     top: 2%;
     margin-left: 0%;   
     position: absolute;
+    filter: brightness(75%); 
     z-index: 99;
 
 }
