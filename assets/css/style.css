@@ -662,6 +662,10 @@ h1 {
 /* PHOTOS PAGE */
 
 
+.photos-header {
+    
+}
+
 .pswp__custom-caption {
   font-family: "Silkscreen", sans-serif;
   font-weight: 400;
@@ -680,7 +684,6 @@ h1 {
   z-index: 10;
   pointer-events: none; /* Allows clicking through the caption to close/pan */
 }
-
 
 
 
@@ -986,10 +989,6 @@ h1 {
 
 
   /* MAIN SECTION LINKS */
-
- 
-
-
 
 
 .main-section {
@@ -1440,7 +1439,25 @@ h1 {
 
 
 
+/* PHOTOS PAGE */
 
+
+
+.picture-tiles {
+    width: 110%;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+   
+   
+
+}
+
+.test-gallery {
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+
+}
 
 
 
