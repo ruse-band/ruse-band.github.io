@@ -386,6 +386,45 @@ h1 {
 }
 
 
+/* NEWS and Links */
+
+.news {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: -10%;
+    
+
+}
+
+a.news-link:link {
+  color: #edaef5;
+  text-decoration: none; /* Removes the default underline */
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.7rem;
+  text-align: center;
+  margin-top: 3%;
+}
+
+/* 2. State of a link the user has already clicked */
+a.news-link:visited {
+  color: #edaef5;
+}
+
+/* 3. State when a user hovers their mouse over the link */
+a.news-link:hover {
+  color: #1e68d6;
+  text-decoration: underline; /* Adds underline back on hover */
+}
+
+/* 4. State at the exact moment the link is being clicked */
+a.news-link:active {
+  color: #69aff0;
+}
+
+
 /* BANDCAMP EMBED */
 
 
@@ -1060,6 +1099,8 @@ h1 {
 
 }
 
+
+
      /* Stack both players exactly on top of each other */
     .video-container-layered {
         position: relative;
@@ -1096,6 +1137,7 @@ h1 {
     margin-top: -20%;
     display: flex;
     flex-direction: column;
+  
 }
 
 
@@ -1212,25 +1254,27 @@ h1 {
 }
 
 /* PORTALS */
+    .portals {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        flex-direction: wrap;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0;
+        
+        
+    }
+    
+    .portals div {
+        width: 15%;
+        margin: 0%;
+    }
 
-.portals {
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    align-content: space-between;
-    margin-bottom: 10%;
-    margin-top: -5%;
-    z-index: 0;
-}
+  
 
-.portals div {
 
-    width: 25%;
-    margin: 2%;
-}
+
 
 .portal-button {
      font-family: "Silkscreen", sans-serif;
@@ -1259,6 +1303,15 @@ h1 {
     animation-duration: 10s;
     /* animation-iteration-count: infinite;  repeats forever */ 
     
+}
+
+.news {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 130vh;
+    margin-top: -20%;
+
 }
 
 /* Old Pulse Animation - Unused */
@@ -1464,6 +1517,7 @@ h1 {
 .desktop-videos-container {
     display: flex;
     flex-direction: row;
+    
     
 }
 
