@@ -432,6 +432,26 @@ a.news-link:active {
 }
 
 
+.main-page-photo {
+    display: none;
+}
+  
+
+.no-ai-disclaimer-box {
+    margin-top: 17%;
+}
+
+h2.no-AI-disclaimer {
+    text-align: center;
+    font-family: "Silkscreen", sans-serif;
+    color: #69aff0;
+
+}
+
+
+
+
+
 /* BANDCAMP EMBED */
 
 
@@ -1065,6 +1085,9 @@ a.news-link:active {
 
 @media screen and (min-width: 1024px) {
 
+
+
+
  /* HEADER CONTAINER W/ VIDEO AND TV */
  
 .loader-video {
@@ -1170,7 +1193,8 @@ a.news-link:active {
   /* MAIN SECTION */
 
   .main-section {
-    margin-top: 22%;
+    margin-top: 18%;
+   
   }
 
 
@@ -1297,7 +1321,7 @@ a.news-link:active {
     color: #bde3fc; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
     border-radius: 35%;
-    font-size: clamp(0.5rem, 5vw + 0.6rem, 2rem);
+    font-size: clamp(0.5rem, 5vw + 0.5rem, 2rem);
     transition: background-color 0.3s; /* Smooth hover effect */
     cursor: pointer; /* Ensures it looks clickable */
     border-style: inset;
@@ -1319,23 +1343,42 @@ a.news-link:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30vw;
+    width: 20vw;
     border: #2dc0ec;
     border-style: groove;
     margin-left: 70%;
-    margin-top: -50%;
+    margin-top: -51%;
 }
 
 p.news-blurb {
-    
     margin-top: 3%; 
     margin-left: 3%; 
     margin-right: 3%;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     text-align: center; 
     font-family: Arial, Helvetica, sans-serif; 
     color: #edaef5;
 }
+
+
+a.news-link:link {
+    font-size: 2rem;
+}
+
+
+
+.main-page-photo {
+   display: block;
+   margin-top: -20%;
+   max-width: 100vw;
+   border-color: #937abb;
+   border-style: double;
+}
+
+
+
+
+
 
 /* Old Pulse Animation - Unused */
 
