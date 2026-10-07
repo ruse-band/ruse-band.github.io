@@ -1316,7 +1316,7 @@ h2.no-AI-disclaimer {
     color: #bde3fc; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
     border-radius: 35%;
-    font-size: clamp(0.3rem, 5vw + 0.4rem, 2rem);
+    font-size: clamp(0.2rem, 5vw + 0.3rem, 2rem);
     transition: background-color 0.3s; /* Smooth hover effect */
     cursor: pointer; /* Ensures it looks clickable */
     border-style: inset;
