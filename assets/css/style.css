@@ -1095,9 +1095,9 @@ h2.no-AI-disclaimer {
  
 .loader-video {
   display: flex;  
-  width: 300%;
+  width: 100%;
   justify-content: center;
-  margin-top: -60%;
+  margin-top: -30%;
  
 }
 
