@@ -1177,6 +1177,7 @@ h2.no-AI-disclaimer {
     z-index: 100;
     margin: 5%;
     margin-top: 40%;
+    
   }
 
 
@@ -1184,7 +1185,7 @@ h2.no-AI-disclaimer {
     display: block;
     justify-content: end;
     position: fixed;
-    z-index: 2000; /* High value to stay above all other elements */
+    z-index: 100; /* High value to stay above all other elements */
     max-width: 100%;
     top: 2%; /* Distance from bottom of screen */
     right: 2%; /* Distance from right of screen */
@@ -1321,7 +1322,7 @@ h2.no-AI-disclaimer {
     color: #bde3fc; /* Text and icon color */
     text-decoration: none; /* Removes default underline from links */
     border-radius: 35%;
-    font-size: clamp(0.5rem, 5vw + 0.5rem, 2rem);
+    font-size: clamp(0.5rem, 5vw + 0.4rem, 2rem);
     transition: background-color 0.3s; /* Smooth hover effect */
     cursor: pointer; /* Ensures it looks clickable */
     border-style: inset;
@@ -1348,6 +1349,7 @@ h2.no-AI-disclaimer {
     border-style: groove;
     margin-left: 70%;
     margin-top: -51%;
+    z-index: 101;
 }
 
 p.news-blurb {
@@ -1375,9 +1377,21 @@ a.news-link:link {
    border-style: double;
 }
 
+/* AI Disclaimer */
 
+.no-ai-disclaimer-box {
+    margin-top: 17%;
+    border: #69aff0;
+    border-style: groove;
+    width: 100vw;
+}
 
+h2.no-AI-disclaimer {
+    text-align: center;
+    font-family: "Silkscreen", sans-serif;
+    color: #69aff0;
 
+}
 
 
 /* Old Pulse Animation - Unused */
