@@ -990,7 +990,7 @@ h2.no-AI-disclaimer {
     margin-top: 5%;
 }
 
-h1.next-show-header {
+.next-show-header {
     font-size: 6rem;
 }
 
@@ -1097,7 +1097,7 @@ h1.next-show-header {
   display: flex;  
   width: 300%;
   justify-content: center;
-  
+  margin-top: -60%;
  
 }
 
