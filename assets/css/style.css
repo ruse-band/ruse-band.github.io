@@ -1261,9 +1261,8 @@ a.news-link:active {
         flex-direction: wrap;
         width: 100%;
         justify-content: center;
-        margin-top: 0;
-        
-        
+        margin-top: 0;  
+        z-index: 2000;
     }
     
     .portals div {
@@ -1273,13 +1272,10 @@ a.news-link:active {
 
   
 
-
-
-
 .portal-button {
-     font-family: "Silkscreen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
  
    
     display: inline-flex; /* Allows icon and text to align nicely */
