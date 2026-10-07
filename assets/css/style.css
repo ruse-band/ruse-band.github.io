@@ -159,6 +159,16 @@ h1 {
   
 }
 
+h3 {
+  display: block;
+  font-style: normal;
+  color: #d2f5f7;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  text-align: center;
+  
+}
 
 
 /* HEADER CONTAINER W/ VIDEO AND TV */
@@ -975,25 +985,9 @@ h2.no-AI-disclaimer {
 
 /* SHOWS PAGE */
 
-.eventbrite  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:5%;
-   
-}
 
-.eventbrite button {
-    font-family: "Silkscreen", sans-serif;
-    font-weight: 400;
-    font-size: 5rem;
-    margin-top: 6%;
-    background-color:#d0b7e0;
-    color:#000000;
-    border-style: groove;
-    border-color: #bde3fc;
-    border-radius: 20px;
-}
+
+
 
 .show-poster {
     display: flex;
@@ -1737,6 +1731,54 @@ h2.no-AI-disclaimer {
     height: 50%;
     max-width: 100%;
 }
+
+
+
+/* SHOWS PAGE */
+
+
+
+
+h1.next-show-header {
+  display: block;
+  font-style: normal;
+  color: #d2f5f7;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  
+}
+
+h3.next-show-description {
+  display: block;
+  font-style: normal;
+  color: #d2f5f7;
+  font-family: "Silkscreen", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  text-align: center;
+  
+}
+
+
+.show-poster-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.show-poster {
+    display: flex;
+    max-width: 100%;
+    margin: 4%;
+    border: #bde3fc;
+    border-style: groove;
+    margin-top: 25%;
+}
+
+
 
 
 

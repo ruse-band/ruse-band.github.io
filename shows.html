@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nabla&family=Pixelify+Sans:wght@400..700&family=Sixtyfour&family=Special+Elite&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Nabla&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <script src="assets/js/script.js"></script>
-    <script src="https://www.eventbrite.ca/static/widgets/eb_widgets.js"></script>
+   
 
     <script defer src="https://cloud.umami.is/script.js" data-website-id="e4d178ac-0620-41e1-afb2-33329b18bb52"></script>
     
@@ -21,15 +22,21 @@
 
 <body> 
 
-    <header>
+<div class="desktop-shows-page">
+
+<div class="next-show">
+
+    <h1 class="next-show-header">
         NEXT SHOW
-    </header>
+    </h1>
     <h1>
-     ................
+     .
     </h1>
-    <h1 style="font-size: 4rem; text-justify:inter-word; margin-top: 4%;">
+    <h3 class="next-show-description">
         Pool House on October 30th with The Unfamiliars
-    </h1>
+    </h3>
+
+
 
     <!--
 <div class="eventbrite">
@@ -42,13 +49,21 @@
 
 
     <h1>
-     ................
+     .
     </h1>
 
-    <h1 style="font-size: 3rem; text-justify:inter-word; margin-top: 20%; margin-bottom: -13%;">
+</div>
+
+
+    <div class="past-shows">
+    
+
+    <h1 style="font-size: 2rem; text-justify:inter-word; margin-top: 20%; margin-bottom: -13%;">
         Past Shows
     </h1>
 
+
+    <div class="show-poster-container">
         <div class="show-poster">
             <img src="images/July 17th L'Escogriffe Show Poster.jpg" style="width: 100%;">
         </div>
@@ -56,7 +71,10 @@
         <div class="show-poster">
             <img src="images/RUSE show poster B - 15 bucks version - lowered bills.jpg" style="width: 100%;">
         </div>
+    </div>
     
+ </div>   
+        
 
 
 
@@ -68,26 +86,10 @@
 
         </div>
 
+</div>
 
 
-<script type="text/javascript">
-    var exampleCallback = function() {
-        console.log('Order complete!');
-    };
 
-    window.EBWidgets.createWidget({
-        widgetType: 'checkout',
-        eventId: '1992213266509',
-        themeSettings: {
-            brandColor: '#8c2eea',
-            fontColor: '#000000',
-            background: '#FFFFFF',
-        },
-        modal: true,
-        modalTriggerElementId: 'eventbrite-widget-modal-trigger-1992213266509',
-        onOrderComplete: exampleCallback
-    });
-</script>
 
 
 </body>
