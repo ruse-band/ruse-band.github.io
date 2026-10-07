@@ -986,6 +986,15 @@ h2.no-AI-disclaimer {
 /* SHOWS PAGE */
 
 
+.next-show {
+    margin-top: 5%;
+}
+
+h1.next-show-header {
+    font-size: 6rem;
+}
+
+
 
 
 
@@ -1766,14 +1775,17 @@ h3.next-show-description {
 .show-poster-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .show-poster {
     display: flex;
-    max-width: 100%;
+    max-width: 30vw;
+    height: auto;
     margin: 4%;
-    border: #bde3fc;
+    border: #700b8a;
     border-style: groove;
     margin-top: 25%;
 }
