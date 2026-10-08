@@ -994,9 +994,9 @@ h2.no-AI-disclaimer {
     font-size: 6rem;
 }
 
-
-
-
+h3.next-show-description {
+    font-size: 3rem;
+}
 
 .show-poster {
     display: flex;
@@ -1746,14 +1746,19 @@ h2.no-AI-disclaimer {
 /* SHOWS PAGE */
 
 
-
+.desktop-shows-page {
+    border: #2dc0ec;
+    border-style: dotted;
+    margin:5%;
+    border-radius: 15%;
+}
 
 h1.next-show-header {
   display: block;
   font-style: normal;
   color: #d2f5f7;
   font-family: "Silkscreen", sans-serif;
-  font-size: 4rem;
+  font-size: 10rem;
   font-weight: 700;
   font-style: normal;
   text-align: center;
@@ -1763,20 +1768,35 @@ h1.next-show-header {
 h3.next-show-description {
   display: block;
   font-style: normal;
-  color: #d2f5f7;
+  color: #b345bd;
   font-family: "Silkscreen", sans-serif;
-  font-size: 2rem;
+  font-size: 4rem;
   font-style: normal;
   text-align: center;
   
 }
 
 
+h1.past-shows-header {
+    display: block;
+    color: #d2f5f7;
+    font-family: "Silkscreen", sans-serif;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+
+
+
+
 .show-poster-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
 }
 
 
@@ -1787,9 +1807,12 @@ h3.next-show-description {
     margin: 4%;
      border: #bde3fc;
     border-style: groove;
-    margin-top: 25%;
+    
 }
 
+.mainpage-link {
+    margin-top: -20%;
+}
 
 
 
