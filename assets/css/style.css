@@ -994,8 +994,16 @@ h2.no-AI-disclaimer {
     font-size: 6rem;
 }
 
+
 h3.next-show-description {
     font-size: 3rem;
+    color: #b345bd;
+}
+
+
+h1.past-shows-header {
+    margin-top: 15%;
+    margin-bottom: -10%;
 }
 
 .show-poster {
