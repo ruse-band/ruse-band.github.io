@@ -124,6 +124,13 @@ html {
 }
 
 
+#loader {
+    margin-bottom: 100%;
+
+}
+
+
+
 .spotify-player-desktop {
     display: none;
 }
@@ -997,7 +1004,7 @@ h2.no-AI-disclaimer {
 
 h3.next-show-description {
     font-size: 3rem;
-    color: #b345bd;
+    color: #bd58d6;
 }
 
 
@@ -1105,9 +1112,42 @@ h1.past-shows-header {
   display: flex;  
   width: 100%;
   justify-content: center;
-  margin-top: -30%;
+  margin-top: -34%;
  
 }
+
+
+
+    #loader {
+        
+        height: 100vh;
+        display: flex;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+        margin-top: -0%;
+    
+    }
+
+    .loader-video {
+       height: 80vh;
+       width: auto;
+       border-color: #2dc0ec;
+       border-style: groove;
+       border-radius: 30px;
+       border-width: 2vw;
+       
+    }
+
+
+
 
 .fixed-image {
     position: fixed;
