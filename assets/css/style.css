@@ -466,6 +466,42 @@ h2.no-AI-disclaimer {
 }
 
 
+.instagram-CTA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+  a.CTA:link {
+  color: #edaef5;
+  text-decoration: none; /* Removes the default underline */
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.7rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+/* 2. State of a link the user has already clicked */
+a.CTA:visited {
+  color: #edaef5;
+}
+
+/* 3. State when a user hovers their mouse over the link */
+a.CTA:hover {
+  color: #1e68d6;
+  text-decoration: underline; /* Adds underline back on hover */
+}
+
+/* 4. State at the exact moment the link is being clicked */
+a.CTA:active {
+  color: #69aff0;
+}
+
+
 
 
 
@@ -1418,7 +1454,9 @@ a.news-link:link {
     font-size: 1.7rem;
 }
 
-
+.instagram-CTA {
+    display: none;
+}
 
 .main-page-photo {
    display: block;
