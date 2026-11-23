@@ -295,10 +295,6 @@ h3 {
     width: 100%;
     margin-top: -12%;
     z-index: 1001;
-  
-    
-    
-    
 }
 
 .social-links div {
@@ -306,9 +302,6 @@ h3 {
     flex-direction: row;
     margin-top: 13%;
   
-    
-    
-   
 }
 
 .social-button {
@@ -1061,6 +1054,15 @@ h1.past-shows-header {
 
 /* CONTACT PAGE */
 
+
+
+
+.contact-header {
+    font-size: 3rem;
+    margin-top: -15%;
+
+}
+
 .contact-info {
     display: flex;
     justify-content: center;
@@ -1089,6 +1091,12 @@ h1.past-shows-header {
 
 .mal-instagram {
     margin-top: -8%;
+}
+
+
+.mainpage-link-contact {
+     font-size: 0.5rem;
+     display: flex;
 }
 
 /* MAIN PAGE BUTTON */
@@ -1690,8 +1698,7 @@ h2.no-AI-disclaimer {
 .desktop-videos-container {
     display: flex;
     flex-direction: row;
-    
-    
+   
 }
 
 
@@ -1829,6 +1836,8 @@ h2.no-AI-disclaimer {
 
 
 
+
+
 /* SHOWS PAGE */
 
 
@@ -1870,6 +1879,7 @@ h1.past-shows-header {
     font-size: 8rem;
     text-align: center;
     margin-top: 10%;
+    margin-bottom: 5vh;
     
 }
 
@@ -1923,6 +1933,49 @@ h1.past-shows-header {
 
 }
 
+
+
+/* CONTACT PAGE */
+
+.contact-header {
+    font-size: 6rem;
+    margin-top: -22%;
+
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+   
+}
+
+.contact-button {
+    color: #b33b3b; 
+    margin: 10%;
+    margin-top: 0;
+    font-size: 3rem;
+
+}
+
+.mainpage-link-contact {
+    font-size: 0.7rem;
+    display: flex;
+    margin-top: -20%;
+    
+}
+
+.contact-full {
+    border-color: #2dc0ec;
+    border-radius: 25%;
+    border-style: groove;
+    margin: 3vw;
+}
 
 
 }
