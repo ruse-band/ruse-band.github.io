@@ -1834,7 +1834,9 @@ h2.no-AI-disclaimer {
     max-width: 100%;
 }
 
-
+h1.videos-more-soon {
+    margin-bottom: 10vh;
+}
 
 
 
@@ -1937,7 +1939,7 @@ h1.past-shows-header {
 
 /* CONTACT PAGE */
 
-.contact-header {
+h3.contact-header {
     font-size: 6rem;
     margin-top: -22%;
 
@@ -1975,6 +1977,7 @@ h1.past-shows-header {
     border-radius: 25%;
     border-style: groove;
     margin: 3vw;
+    background-color:#4218ff31
 }
 
 
